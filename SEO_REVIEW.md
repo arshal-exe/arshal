@@ -12,20 +12,20 @@ Recommended minimal meta snippet to add to the `<head>` of each page (replace pl
 ```html
 <title>Arshal — Web Developer | Portfolio</title>
 <meta name="description" content="Arshal — Web developer. Portfolio showcasing projects, skills and contact information.">
-<link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/src/home/home.html" />
+<link rel="canonical" href="https://arshal-exe.github.io/arshal/src/home/home.html" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="Arshal — Web Developer" />
 <meta property="og:description" content="Portfolio of Arshal — web & Pawn developer." />
-<meta property="og:image" content="https://REPLACE_WITH_YOUR_DOMAIN/path/to/social-preview.png" />
-<meta property="og:url" content="https://REPLACE_WITH_YOUR_DOMAIN/src/home/home.html" />
+<meta property="og:image" content="https://arshal-exe.github.io/arshal/path/to/social-preview.png" />
+<meta property="og:url" content="https://arshal-exe.github.io/arshal/src/home/home.html" />
 <meta property="og:type" content="website" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Arshal — Web Developer" />
 <meta name="twitter:description" content="Portfolio of Arshal — web & Pawn developer." />
-<meta name="twitter:image" content="https://REPLACE_WITH_YOUR_DOMAIN/path/to/social-preview.png" />
+<meta name="twitter:image" content="https://arshal-exe.github.io/arshal/path/to/social-preview.png" />
 ```
 
 Structured data example (Person):
@@ -36,7 +36,7 @@ Structured data example (Person):
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Arshal",
-  "url": "https://REPLACE_WITH_YOUR_DOMAIN/src/home/home.html",
+  "url": "https://arshal-exe.github.io/arshal/src/home/home.html",
   "sameAs": [
     "https://github.com/arshal-exe",
     "https://instagram.com/arshal__00"
