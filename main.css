@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 70px;
+    background: radial-gradient(circle at top, #03130d, #000 55%);
+}
+
+.page-shell {
+    min-height: 100vh;
+}
+
+.hero-card {
+    background: rgba(0, 0, 0, 0.88);
+    border: 1px solid rgba(0, 255, 0, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 0 50px rgba(0, 255, 0, 0.08);
+    padding: 32px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 10px 16px;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.detail-head {
+    margin-bottom: 22px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.05;
+    color: #00ff00;
+}
+
+.profile-list {
+    display: grid;
+    gap: 14px;
+}
+
+.profile-list li {
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 255, 0, 0.18);
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.35);
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile-list span {
+    display: inline-block;
+    min-width: 100px;
+    color: #a4ff9d;
+    font-weight: 700;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 999px;
+    background: #00ff00;
+    color: #051a00;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 255, 0, 0.2);
+}
+
+.logo-card {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 255, 0, 0.22);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo-mark {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 22px;
+    display: grid;
+    place-items: center;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 255, 0, 0.45);
+    background: rgba(0, 255, 0, 0.08);
+    color: #00ff00;
+    font-size: 3rem;
+    letter-spacing: 0.14em;
+}
+
+.logo-text p {
+    margin-bottom: 10px;
+}
+
+.logo-text .small {
+    margin: 0;
+    color: rgba(0, 255, 0, 0.75);
+}
+
+@media (max-width: 860px) {
+    .hero-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+.custom-nav {
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 35px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00ff00 !important;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.brand-logo:hover {
+    color: #a4ff9d !important;
+    text-decoration: none;
+}
+
+.nav-custom-link {
+    font-weight: 550;
+    color: #e2d7d7 !important;
+    padding: 8px 15px !important;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #00ff00;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-custom-link:hover::after {
+    width: 60%;
+}
+
+.btn-outline-light {
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: #00ff00 2px solid !important;
+}
+
+.btn-outline-light:hover {
+    background: #00ff00;
+    color: #051a00 !important;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-toggler {
+    border-color: #00ff00 !important;
+    background-color: transparent !important;
+    height: 34px;
+}
+
+.custom-toggler-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #00ff00 !important;
+    display: block;
+    position: relative;
+    background-image: none !important;
+}
+
+.custom-toggler-icon::before,
+.custom-toggler-icon::after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #00ff00 !important;
+    position: absolute;
+    left: 0;
+}
+
+.custom-toggler-icon::before {
+    top: -7px;
+}
+
+.custom-toggler-icon::after {
+    top: 7px;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 0;
+}

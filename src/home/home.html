@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshal | Full Stack Developer | Portfolio</title>
+    <meta name="description"    content="Official portfolio of Arshal. Full Stack Developer, Pawn Developer, Web Developer and Server Management specialist from Kerala, India.">
+    <meta name="keywords" content="Arshal, Arshal CK, Full Stack Developer, Web Developer, Pawn Developer, SA-MP Developer, OpenMP Developer, Portfolio">
+    <meta name="author" content="Arshal">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" sizes="32x32" href="https://cdn.discordapp.com/attachments/1482741584989524130/1529878824043417731/c86cffe3e37ee9164c369998af069cb4.png?ex=6a638a2f&is=6a6238af&hm=ea166d8505d67426207e77096fd3d5aede94ed9f00389e2ac6b9cb130084c8e7&" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body class="main-page">
+    <canvas id="matrix"></canvas>
+    <section class="navbar-section">
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-dark custom-nav">
+                <div class="container">
+                    <a class="bi bi-person-circle me-2 brand-logo" href="/">
+                        Arshal
+                    </a>
+                    <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link nav-custom-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link nav-custom-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link nav-custom-link">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link nav-custom-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#works" class="nav-link nav-custom-link">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link nav-custom-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#about" class="btn btn-outline-light">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="container">
+        <section id="home" class="page-home mt-5">
+            <div class="container py-5">
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <p class="hero-label">Hi I am</p>
+                        <h1 class="hero-name">Arshal</h1>
+                        <h2 class="hero-role"><span class="typing-text">WEB Developer</span></h2>
+
+                        <div class="social-links d-flex gap-3 my-4">
+                            <a href="https://github.com/arshal-exe" target="_blank"
+                                class="social-item bi bi-github"></a>
+                            <a href="https://instagram.com/arshal__00" target="_blank"
+                                class="social-item bi bi-instagram"></a>
+                            <a href="https://discord.com/users/1135547753771049050" target="_blank"
+                                class="social-item bi bi-discord"></a>
+                            <a href="mailto:arshalck089@gmail.com" target="_blank"
+                                class="social-item bi bi-envelope"></a>
+                        </div>
+
+                        <div class="hero-actions d-flex flex-wrap gap-3 mb-4">
+                            <a href="#about" class="btn hero-btn hero-btn-primary">Check Me</a>
+                        </div>
+
+                        <div class="hero-stats d-flex flex-wrap gap-3">
+                            <div class="stat-card">
+                                <p class="stat-value">2+</p>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-value">50+</p>
+                                <p class="stat-label">Projects done</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-value">100+</p>
+                                <p class="stat-label">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="hero-image-shell">
+                            <div class="hero-image-ring"></div>
+                            <img class="hero-image"
+                                src="https://cdn.discordapp.com/attachments/1482741584989524130/1529878824043417731/c86cffe3e37ee9164c369998af069cb4.png?ex=6a638a2f&is=6a6238af&hm=ea166d8505d67426207e77096fd3d5aede94ed9f00389e2ac6b9cb130084c8e7&"
+                                alt="arshal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">About Me</span>
+                <h2>About Me</h2>
+                <p>Hey i'm a passionate web developer with experience in creating dynamic and user-friendly websites. I
+                    love turning ideas into reality through code. Iam a dedicated professional committed to delivering
+                    high-quality solutions.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-5">
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="profile-card">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <img src="https://cdn.discordapp.com/attachments/1482741584989524130/1529878824043417731/c86cffe3e37ee9164c369998af069cb4.png?ex=6a638a2f&is=6a6238af&hm=ea166d8505d67426207e77096fd3d5aede94ed9f00389e2ac6b9cb130084c8e7&"
+                                        class="img-fluid" alt="">
+                                    <div class="status-indicator"></div>
+                                </div>
+                                <h3>Arshal</h3>
+                                <span class="role">Full Stack Developer</span>
+                            </div>
+
+                            <div class="social-connect">
+                                <a href="https://github.com/arshal-exe" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://instagram.com/arshal__00" target="_blank"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="https://discord.com/users/1135547753771049050" target="_blank"><i
+                                        class="bi bi-discord"></i></a>
+                                <a href="mailto:arshalck089@gmail.com" target="_blank"><i
+                                        class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                        <div class="content-wrapper">
+                            <div class="bio-section">
+                                <div class="section-tag">About Me</div>
+                                <h2>I'm Arshal </h2>
+                                <p>I’m a creative full-stack developer who loves building modern, interactive, and
+                                    visually appealing web experiences. I focus on developing smooth, responsive, and
+                                    scalable websites that combine performance with clean design. My goal is to
+                                    transform ideas into powerful digital products through innovative and efficient
+                                    development.</p>
+                                <p>Along with web development, I also work with Pawn scripting, custom textdraw
+                                    creation, mapping, and plugin/server management. I enjoy creating unique systems and
+                                    advanced projects while maintaining quality, optimization, and a great user
+                                    experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">My Skills</span>
+                <h2>My Skills</h2>
+                <p>
+                    A collection of technologies, programming languages, and creative tools
+                    I use to build modern, scalable, and visually impressive digital experiences.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-5">
+
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="150">
+
+                        <div class="skills-box">
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>HTML</h5>
+                                    <span>80%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress html"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>CSS</h5>
+                                    <span>70%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress css"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>JavaScript</h5>
+                                    <span>65%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress js"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>Bootstrap</h5>
+                                    <span>65%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress bootstrap"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+
+                        <div class="skills-box">
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>Pawn</h5>
+                                    <span>98%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress pawn"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>TextDraw</h5>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress textdraw"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>Mapping</h5>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress mapping"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h5>Server Management</h5>
+                                    <span>99%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress server"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-tag">Experience & Growth</div>
+                    <h3>Building Modern & Creative Digital Solutions</h3>
+                    <p>I enjoy learning new technologies and constantly improving my skills to create premium-quality
+                        projects with smooth performance, modern UI/UX design, responsive layouts, and interactive
+                        experiences. My focus is always on clean code, creativity, and building systems that feel
+                        professional and engaging.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">Services</span>
+                <h2>What I Do</h2>
+                <p>
+                    I provide modern and scalable digital solutions with clean design,
+                    smooth performance, and high-quality development.
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <i class="bi bi-code-slash"></i>
+                            <h4>Web Development</h4>
+                            <p>Modern responsive websites with smooth UI and clean structure.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <i class="bi bi-layers"></i>
+                            <h4>Full Stack (MERN)</h4>
+                            <p>Dynamic web apps with backend, APIs, and database integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card">
+                            <i class="bi bi-palette"></i>
+                            <h4>UI/UX Design</h4>
+                            <p>Clean and modern interface design with premium user experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card">
+                            <i class="bi bi-controller"></i>
+                            <h4>Pawn Development</h4>
+                            <p>Custom SA-MP systems, scripting, and advanced features.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-card">
+                            <i class="bi bi-file-image-fill"></i>
+                            <h4>Mapping</h4>
+                            <p>Custom SA-MP maps with unique designs and features.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-card">
+                            <i class="bi bi-server"></i>
+                            <h4>Server Management</h4>
+                            <p>Server setup, optimization, and plugin management.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="works" class="works section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">My Works</span>
+                <h2>Pawn & Web Projects</h2>
+                <p>
+                    A showcase of my development work including web applications
+                    and advanced Pawn scripting systems.
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="work-card">
+                            <img src="https://media.discordapp.net/attachments/1478272549405327365/1524741380260368395/video.thump.png?ex=6a634e91&is=6a61fd11&hm=62dddfa6551f69988e279d4aff16a05ea7313af3f6ec64a8be5b61a4e03749f3&=&format=webp&quality=lossless&width=938&height=625" alt="">
+                            <div class="work-info">
+                                <h4>SA-MP Custom System</h4>
+                                <p>Advanced Pawn scripting with custom UI and features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="work-card">
+                            <img src="https://media.discordapp.net/attachments/1482741584989524130/1529880220318830592/image.png?ex=6a638b7c&is=6a6239fc&hm=9e03097d9685614d4cc8ec612c6e5f8ec3fcc236448b77cf0bc30ab412ea3f7f&=&format=webp&quality=lossless&width=1093&height=614" alt="">
+                            <div class="work-info">
+                                <h4>Calculator</h4>
+                                <p>A simple calculator application built with Html/css/js.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="work-card">
+                            <img src="https://media.discordapp.net/attachments/1478272549405327365/1521476144749088878/yt.png?ex=6a634b14&is=6a61f994&hm=68bba33c10ed07911bbf753f51588a19971bea093ab965aa79641bb1cc49ce8c&=&format=webp&quality=lossless&width=938&height=625" alt="">
+                            <div class="work-info">
+                                <h4>TextDraw UI</h4>
+                                <p>Custom designed UI using Pawn scripting.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="subtitle">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>
+                    Have a project or idea? Feel free to contact me anytime.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-box">
+                            <form id="myForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn-submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="contactSuccess" class="success-card d-none" data-aos="fade-left" data-aos-delay="150">
+                    <div class="success-row">
+                        <span class="success-icon"><i class="bi bi-check-lg"></i></span>
+                        <div class="success-text">Message sent successfully</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>&copy; 2026 arshal. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
